@@ -9,7 +9,6 @@ set(SOCI_POSTGRESQL_LIBRARY /usr/local/lib/soci/libsoci_postgresql.so)
 set(SOCI_INCLUDE_DIR /usr/local/include)
 
 set(CLICKHOUSE_CPP_LIBRARY /usr/local/lib/libclickhouse-cpp-lib.so)
-#set(CLICKHOUSE_CPP_INCLUDE /usr/local/include)
 
 # Найти SOCI
 find_library(SOCI_LIBRARY NAMES soci_core)
@@ -18,7 +17,6 @@ find_path(SOCI_INCLUDE_DIR soci/soci.h)
 
 # Найти clickhouse-cpp
 find_library(CLICKHOUSE_CPP_LIBRARY NAMES clickhouse_cpp)
-#find_path(CLICKHOUSE_CPP_INCLUDE clickhouse)
 
 # Найти PostgreSQL
 find_package(PostgreSQL REQUIRED)
